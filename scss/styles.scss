@@ -1,3 +1,7 @@
+.testimonials p {
+  width: 80% !important;
+}
+
 .text-white a {
   text-decoration: none;
 }
@@ -111,7 +115,7 @@ p.hero-second-message {
 }
 
 .navbar a {
-  color: rgb(35, 35, 35)
+  color: rgb(35, 35, 35);
 }
 
 @media (max-width: 992px) {
@@ -155,5 +159,22 @@ p.hero-second-message {
 
   .details-2 .decoration-star {
     top: 300px;
+  }
+
+  .xl-text {
+    font-size: 34px;
+  }
+
+  // .stats .row {
+  //   margin-top: 3rem !important;
+  //   margin-bottom: 3rem !important;
+  // }
+
+  // .project1 .card-title {
+  //   text-align: center !important;
+  // }
+
+  .testimonialarrows {
+    font-size: 2.5em !important;
   }
 }

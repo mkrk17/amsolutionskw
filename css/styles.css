@@ -1,3 +1,7 @@
+.testimonials p {
+  width: 80% !important;
+}
+
 .text-white a {
   text-decoration: none;
 }
@@ -137,5 +141,11 @@ p.hero-second-message {
   }
   .details-2 .decoration-star {
     top: 300px;
+  }
+  .xl-text {
+    font-size: 34px;
+  }
+  .testimonialarrows {
+    font-size: 2.5em !important;
   }
 }
