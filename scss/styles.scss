@@ -1,3 +1,11 @@
+.navbar-shrink .navbar-brand img {
+  width: 160px; /* Adjust the width when the navbar is shrunk */
+}
+
+.navbar-shrink .navbar-nav .nav-link {
+  font-size: 15px; /* Make the nav links one size smaller when scrolled down */
+}
+
 .testimonials p {
   width: 80% !important;
 }
@@ -63,7 +71,7 @@ p.hero-second-message {
 .navbar-sticky {
   background: #fff;
   opacity: 0.9;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 12px grey;
 }
 
 .details .decoration-star {
