@@ -126,6 +126,54 @@ p.hero-second-message {
   color: rgb(35, 35, 35);
 }
 
+.c-item {
+  height: 80vh;
+}
+
+.c-img {
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.6);
+}
+
+/* Custom styles for animated navigation */
+.navbar-nav .nav-link {
+  position: relative;
+  padding-bottom: 10px;
+}
+
+.navbar-nav .nav-link::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 15px;
+  width: 0;
+  height: 2px;
+  background-color: #fff; /* Change this to your desired color */
+  transition: width 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover::after {
+  width: 70%;
+}
+
+/* Custom styles for animated icons on hover */
+.icon-wrapper {
+  transition: transform 0.3s ease;
+}
+
+.icon-wrapper:hover {
+  transform: scale(1.1); /* Adjust the scale factor as needed */
+}
+
+.flip-icon {
+  transition: transform 0.3s ease;
+}
+
+.flip-icon:hover {
+  transform: rotateY(180deg);
+}
+
 @media (max-width: 992px) {
   .xl-text {
     font-size: 50px;
@@ -184,5 +232,10 @@ p.hero-second-message {
 
   .testimonialarrows {
     font-size: 2.5em !important;
+  }
+
+  /* Disable navbar link hover effect on mobile devices */
+  .navbar-nav .nav-link:hover::after {
+    width: 0;
   }
 }

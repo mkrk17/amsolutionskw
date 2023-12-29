@@ -12,9 +12,14 @@
   <link rel="stylesheet" href="css/font-awesome.css" />
   <link rel="stylesheet" href="css/bootstrap.css" />
   <link rel="stylesheet" href="css/styles.css" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
   <link rel="icon" href="images/A&MFavicon.png" />
   <title>A&M Interiors and Facilities</title>
 </head>
+
 
 <body>
   <nav class="navbar navbar-expand-lg sticky-top navbar-light bg-primary">
@@ -58,7 +63,7 @@
   </nav>
 
   <!-- Header -->
-  <header class="header position-relative mt-4 pb-5 overflow-hidden">
+  <header class="header position-relative mt-4 pb-5 overflow-hidde d-none">
     <img src="images/decoration-star.svg" alt="" class="decoration-star position-absolute" />
     <img src="images/decoration-star.svg" alt="" class="decoration-star-2 position-absolute" />
     <div class="container position-relative z-3">
@@ -130,6 +135,54 @@
     </div>
   </header>
 
+  <!--Header 2 -->
+  <header>
+    <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item c-item active">
+          <img src="images/amsolutions-heroslider-1.webp" class="d-block w-100 c-img" style="height:700px;" alt="...">
+          <div class="carousel-caption top-0 mt-8 mt-sm-6">
+            <h1 class="mt-5 display-3 fw-bold text-uppercase text-white animate__animated animate__fadeInDown animate__faster">Products</h1>
+            <!-- <p class="lead fw-normal w-75 text-center mx-auto animate__animated animate__fadeInUp animate__delay-1s animate__fast">From ceramics to furniture, all you require for construction, interiors and maintenance.</p> -->
+            <p class="lead fw-normal w-100 w-sm-75 text-center mx-auto animate__animated animate__fadeInUp animate__delay-1s animate__faster">All inclusive solutions for construction, interiors, and maintenance needs.</p>
+            <button class="btn btn-primary px-4 py-2 btn-block animate__animated animate__fadeIn animate__delay-2s animate__faster">Learn More</button>
+          </div>
+        </div>
+        <div class="carousel-item c-item">
+          <img src="images/amsolutions-heroslider-2.webp" class="d-block w-100 c-img" style="height:700px;" alt="...">
+          <div class="carousel-caption top-0 mt-8 mt-sm-6">
+            <h1 class="mt-5 display-3 fw-bold text-uppercase text-white animate__animated animate__fadeInDown animate__faster">Services</h1>
+            <!-- <p class="lead fw-normal w-75 text-center mx-auto animate__animated animate__fadeInUp animate__fast animate__delay-1s">Elevate your spaces with our seamless blend of innovative design and meticulous maintenance services. Transforming environments, exceeding expectations.</p> -->
+           <p class="lead fw-normal w-100 w-sm-75 text-center mx-auto animate__animated animate__fadeInUp animate__delay-1s animate__faster">All inclusive solutions for construction, interiors, and maintenance needs.</p>
+            <button class="btn btn-primary px-4 py-2 btn-block animate__animated animate__fadeIn animate__faster animate__delay-2s">Learn More</button>
+          </div>
+        </div>
+        <div class="carousel-item c-item">
+          <img src="images/amsolutions-heroslider-3.webp" class="d-block w-100 c-img" style="height:700px;" alt="...">
+          <div class="carousel-caption top-0 mt-8 mt-sm-6">
+            <h1 class="mt-5 display-3 fw-bold text-uppercase text-white animate__animated animate__fadeInDown animate__faster">Projects</h1>
+            <!-- <p class="lead fw-normal w-75 text-center mx-auto  animate__animated animate__fadeInUp animate__delay-1s animate__fast">Crafting Excellence with comprehensive interior solutions, blending curated products and expert services for distinctive, transformative design projects.</p> -->
+            <p class="lead fw-normal w-100 w-sm-75 text-center mx-auto animate__animated animate__fadeInUp animate__delay-1s animate__faster">All inclusive solutions for construction, interiors, and maintenance needs.</p>
+            <button class="btn btn-primary px-4 py-2 btn-block animate__animated animate__fadeIn animate__delay-2s animate__faster">Learn More</button>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </header>
+
 
 
   <!-- Introduction -->
@@ -165,22 +218,22 @@
     <div class="row numbersstat my-5">
       <div class="col-md-4 text-center">
 
-        <h2 class="counter xl-text rounded-circle stats-number" data-target="15"></h2>
-        <p class="fw-bold">Years in Service</p>
+        <h1 class="counter rounded-circle stats-number" data-target="15"></h1>
+        <p class="fw-bold fs-5">Years in Service</p>
 
       </div>
 
       <div class="col-md-4 text-center">
 
-        <h2 class="counter xl-text rounded-circle stats-number" data-target="100"></h2>
-        <p class="fw-bold">Happy Clients</p>
+        <h1 class="counter rounded-circle stats-number" data-target="100"></h1>
+        <p class="fw-bold fs-5">Happy Clients</p>
 
       </div>
 
       <div class="col-md-4 text-center">
 
-        <h2 class="counter xl-text rounded-circle stats-number" data-target="180"></h2>
-        <p class="fw-bold">Projects Completed</p>
+        <h1 class="counter rounded-circle stats-number" data-target="180"></h1>
+        <p class="fw-bold fs-5">Projects Completed</p>
 
       </div>
 
@@ -276,74 +329,74 @@
         </div>
         <div class="col-lg-7">
           <div class="row mb-4">
-            <div class="col-md-4 d-flex flex-column align-items-center text-center">
-              <i class="fas fa-tools fa-4x text-secondary mb-2"></i>
+            <div class="col-md-4 d-flex flex-column align-items-center text-center icon-wrapper">
+              <i class="fas fa-tools fa-3x text-secondary mb-2"></i>
               <p class="fs-5 fw-bold">Maintenance Works</p>
             </div>
 
-            <div class="col-md-4 d-flex flex-column align-items-center text-center">
-              <i class="fas fa-water fa-4x text-secondary mb-2"></i>
+            <div class="col-md-4 d-flex flex-column align-items-center text-center icon-wrapper">
+              <i class="fas fa-water fa-3x text-secondary mb-2"></i>
               <p class="fs-5 fw-bold">Water Proofing</p>
             </div>
-            <div class="col-md-4 d-flex flex-column align-items-center text-center">
+            <div class="col-md-4 d-flex flex-column align-items-center text-center icon-wrapper">
 
-              <i class="fas fa-couch fa-4x text-secondary mb-2"></i>
+              <i class="fas fa-couch fa-3x text-secondary mb-2"></i>
               <p class="fs-5 fw-bold">Loose & Custom Furniture</p>
             </div>
           </div>
           <div class="row mb-4">
-            <div class="col-md-4 d-flex flex-column align-items-center text-center">
-              <i class="fas fa-cubes fa-4x text-secondary mb-2"></i>
+            <div class="col-md-4 d-flex flex-column align-items-center text-center icon-wrapper">
+              <i class="fas fa-cubes fa-3x text-secondary mb-2"></i>
 
               <p class="fs-5 fw-bold">3D Visualisation</p>
             </div>
-            <div class="col-md-4 d-flex flex-column align-items-center text-center">
-              <i class="fas fa-tree fa-4x text-secondary mb-2"></i>
+            <div class="col-md-4 d-flex flex-column align-items-center text-center icon-wrapper">
+              <i class="fas fa-tree fa-3x text-secondary mb-2"></i>
 
               <p class="fs-5 fw-bold">LandScaping</p>
             </div>
-            <div class="col-md-4 d-flex flex-column align-items-center text-center">
-              <i class="fas fa-chart-bar fa-4x text-secondary mb-2"></i>
+            <div class="col-md-4 d-flex flex-column align-items-center text-center icon-wrapper">
+              <i class="fas fa-chart-bar fa-3x text-secondary mb-2"></i>
               <p class="fs-5 fw-bold">Flooring</p>
             </div>
           </div>
             <div class="row mb-4">
-             <div class="col-md-4 d-flex flex-column align-items-center text-center">
-              <i class="fas fa-warehouse fa-4x text-secondary mb-2"></i>
+             <div class="col-md-4 d-flex flex-column align-items-center text-center icon-wrapper">
+              <i class="fas fa-warehouse fa-3x text-secondary mb-2"></i>
               <!-- <img src="images/icon-interiordesign.png" style="width:50%;" alt=""> -->
               <p class="fs-5 fw-bold">Ceiling</p>
 
             </div>
-            <div class="col-md-4 d-flex flex-column align-items-center text-center">
-              <i class="fas fa-pen-ruler fa-4x text-secondary mb-2"></i>
+            <div class="col-md-4 d-flex flex-column align-items-center text-center icon-wrapper">
+              <i class="fas fa-pen-ruler fa-3x text-secondary mb-2"></i>
               <!-- <img src="images/icon-interiordesign.png" style="width:90px;" alt=""> -->
 
               <p class="fs-5 fw-bold">Interior Design</p>
             </div>
           
-           <div class="col-md-4 d-flex flex-column align-items-center text-center">
-            <i class="fas fa-fan fa-4x text-secondary mb-2"></i>
+           <div class="col-md-4 d-flex flex-column align-items-center text-center icon-wrapper">
+            <i class="fas fa-fan fa-3x text-secondary mb-2"></i>
             <!-- <img src="images/icon-interiordesign.png" style="width:90px;" alt=""> -->
 
             <p class="fs-5 fw-bold">HVAC</p>
              </div>
             </div>
             <div class="row mb-4">
-              <div class="col-md-4 d-flex flex-column align-items-center text-center">
-               <i class="fas fa-plug-circle-check fa-4x text-secondary mb-2"></i>
+              <div class="col-md-4 d-flex flex-column align-items-center text-center icon-wrapper">
+               <i class="fas fa-plug-circle-check fa-3x text-secondary mb-2"></i>
                <!-- <img src="images/icon-interiordesign.png" style="width:50%;" alt=""> -->
                <p class="fs-5 fw-bold">Electrical</p>
  
              </div>
-             <div class="col-md-4 d-flex flex-column align-items-center text-center">
-               <i class="fas fa-wrench fa-4x text-secondary mb-2"></i>
+             <div class="col-md-4 d-flex flex-column align-items-center text-center icon-wrapper">
+               <i class="fas fa-wrench fa-3x text-secondary mb-2"></i>
                <!-- <img src="images/icon-interiordesign.png" style="width:90px;" alt=""> -->
  
                <p class="fs-5 fw-bold">Plumbing</p>
              </div>
            
-            <div class="col-md-4 d-flex flex-column align-items-center text-center">
-             <i class="fas fa-compass-drafting fa-4x text-secondary mb-2"></i>
+            <div class="col-md-4 d-flex flex-column align-items-center text-center icon-wrapper">
+             <i class="fas fa-compass-drafting fa-3x text-secondary mb-2"></i>
              <!-- <img src="images/icon-interiordesign.png" style="width:90px;" alt=""> -->
  
              <p class="fs-5 fw-bold">Engineering Drawing</p>
@@ -351,6 +404,58 @@
              </div>
           
         </div>
+
+     <!--Row for Products --> 
+     <div class="row mt-6">
+      <div class="col-lg-5">
+        <div class="text-container text-center text-lg-start">
+          <h2>
+            <span class="text-secondary">Products</span> that we offer
+          </h2>
+          <p>
+            We provide the products required for your construction, interior design and maintenance requiremets.
+
+          </p>
+        </div>
+      </div>
+      <div class="row mt-5 d-flex flex-row justify-content-around">
+        <div class="col-12 col-md-4">
+          <h4 class="me-4">Parquet <i class="ms-1 fas fa-plus text-danger fa-sm flip-icon"></i></h4>
+        </div>
+        <div class="col-12 col-md-4">
+          <h4 class="me-4">Vinyl<i class="ms-2 fas fa-plus text-danger fa-sm flip-icon"></i></h4>
+        </div>
+        <div class="col-12 col-md-4">
+          <h4 class="me-4">Carpets<i class="ms-2 fas fa-plus text-danger fa-sm flip-icon"></i></h4>
+        </div>
+       </div> 
+       <div class="row mt-3 d-flex flex-row justify-content-around">
+         <div class="col-12 col-md-4">
+          <h4 class="me-4">Ceramic Tiles<i class="ms-2 fas fa-plus text-danger fa-sm flip-icon"></i></h4>
+         </div>
+         <div class="col-12 col-md-4">
+          <h4 class="me-4">Marble<i class="ms-2 fas fa-plus text-danger fa-sm flip-icon"></i></h4>
+         </div>
+         <div class="col-12 col-md-4">
+          <h4 class="me-4">Wood Wall Cladding<i class="ms-2 fas fa-plus text-danger fa-sm flip-icon"></i></h4>
+         </div>
+        </div>
+        <div class="row mt-3 d-flex flex-row justify-content-around">
+          <div class="col-12 col-md-4">
+           <h4 class="me-4">Loose Furniture<i class="ms-2 fas fa-plus text-danger fa-sm flip-icon"></i></h4>
+          </div>
+          <div class="col-12 col-md-4">
+           <h4 class="me-4">Custom Furniture<i class="ms-2 fas fa-plus text-danger fa-sm flip-icon"></i></h4>
+          </div>
+          <div class="col-12 col-md-4 invisible">
+            <h4 class="me-4">Custom Furniture</h4>
+           </div>
+           
+          
+         </div>
+
+      </div>
+       
       </div>
   </section>
 
@@ -386,15 +491,15 @@
   </section> -->
 
   <!-- Get Quote -->
-  <section class="get-quote py-6 bg-light text-center">
+  <section class="get-quote py-6 bg-light text-center mt-2">
     <div class="container">
       <div class="row">
         <div class="col-lg-8 offset-lg-2">
-          <h4 class="lh-base">
-            Our team of highly skilled designers and maintenance expertise
-            can deliver above your level of expections
+          <h4 class="lh-base text-center">
+            Our team of highly skilled designers and maintenance experts
+            can deliver above your level of expections.
           </h4>
-          <a href="#contact" class="btn btn-secondary btn-lg">Get A Quote</a>
+          <a href="#contact" class="btn btn-secondary btn-lg mt-4">Get A Quote</a>
         </div>
       </div>
     </div>
@@ -416,11 +521,7 @@
             </a>
             <div class="card-body">
               <h5 class="project card-title text-center text-md-start">Renovation of a Dental Clinic</h5>
-              <!-- <p class="card-text">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                Dolore, impedit.
-                <a href="article.html">Read More</a>
-              </p> -->
+          
             </div>
           </div>
         </div>
@@ -576,9 +677,10 @@
       </div>
   </section>
 
+
   <!--FAQs-->
-  <section id="faqs" class="faqs bg-white py-4 py-md-6"></section>
-  <div class="container">
+  <section id="faqs" class="faqs bg-white py-4 py-md-6 d-none">
+    <div class="container">
     <div class="col-lg-8 offset-lg-2 text-center mb-6">
       <h2>
         Frequently Asked Questions
@@ -737,7 +839,7 @@
         </div>
       </div>
     </div>
-  </div>
+    </div>
   </section>
 
   <!-- Contact -->
@@ -885,6 +987,7 @@
   <script src="js/bootstrap.bundle.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bs5-lightbox@1.8.3/dist/index.bundle.min.js"></script>
   <script src="js/script.js"></script>
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script> -->
 </body>
 
 </html>

@@ -43,6 +43,15 @@ function incrementStats() {
 }
 
 // Event Listeners
+
+// Use Intersection Observer for counters
+const counterObserver = new IntersectionObserver(incrementStats, {
+  threshold: 0.8,
+});
+document
+  .querySelectorAll(".counter")
+  .forEach((counter) => counterObserver.observe(counter));
+
 document.addEventListener("DOMContentLoaded", userScroll);
-document.addEventListener("DOMContentLoaded", incrementStats);
+// document.addEventListener("DOMContentLoaded", incrementStats);
 document.querySelector("#to-top").addEventListener("click", scrollToTop);
