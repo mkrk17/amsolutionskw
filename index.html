@@ -1005,23 +1005,7 @@
   <script src="js/bootstrap.bundle.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bs5-lightbox@1.8.3/dist/index.bundle.min.js"></script>
   <script src="js/script.js"></script>
-  document.addEventListener('DOMContentLoaded', function () {
-    const cards = document.querySelectorAll('.custom-card');
   
-    cards.forEach(card => {
-      const textContainer = card.querySelector('.card-text-container');
-      const image = card.querySelector('img');
-  
-      card.addEventListener('mouseenter', function () {
-        const imageHeight = image.offsetHeight;
-        textContainer.style.transform = `translateY(-${imageHeight}px)`;
-      });
-  
-      card.addEventListener('mouseleave', function () {
-        textContainer.style.transform = 'translateY(0)';
-      });
-    });
-  });
   
 </body>
 
