@@ -20,7 +20,6 @@
   <title>A&M Interiors and Facilities</title>
 </head>
 
-
 <body>
   <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-primary">
     <div class="container py-0">
@@ -450,6 +449,34 @@
       </div>
   </section>
 
+  <!--Product cards with card like images-->
+
+  <div class="container mt-5">
+    <div class="row row-cols-1 row-cols-md-3">
+      <div class="col mb-4 custom-card">
+        <img src="images/products-flooring.jpg" class="card-img-top img-fluid" alt="Card Image 1">
+        <div class="card-text-container">
+          <p class="card-text">Furniture<i class="fas fa-plus plus-sign"></i></p>
+        </div>
+      </div>
+  
+      <div class="col mb-4 custom-card">
+        <img src="images/products-marble.jpg" class="card-img-top img-fluid" alt="Card Image 2">
+        <div class="card-text-container">
+          <p class="card-text">Marble<i class="fas fa-plus plus-sign"></i></p>
+        </div>
+      </div>
+  
+      <div class="col mb-4 custom-card">
+        <img src="images/Products-tiles.jpg" class="card-img-to img-fluid" alt="Card Image 3">
+        <div class="card-text-container">
+          <p class="card-text">Ceramic Tiles<i class="fas fa-plus plus-sign"></i></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
   <!-- Details 2 -->
   <!-- <section class="details-2 position-relative my-6 overflow-hidden">
     <img src="images/decoration-star.svg" alt="" class="decoration-star position-absolute" />
@@ -841,7 +868,7 @@
       <div class="row">
         <div class="col-lg-6 d-none d-md-block">
           <div class="image-container">
-            <img src="images/AMSolutions - ContactImage.png" alt="" class="img-fluid" />
+            <img src="images/amsolutionskw-handshake.png" alt="" class="img-fluid" />
           </div>
         </div>
         <div class="col-lg-6">
@@ -978,11 +1005,24 @@
   <script src="js/bootstrap.bundle.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bs5-lightbox@1.8.3/dist/index.bundle.min.js"></script>
   <script src="js/script.js"></script>
-   <!-- Include jQuery -->
-   <!-- <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script> -->
-   <!-- Include the JavaScript file -->
-   
-  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script> -->
+  document.addEventListener('DOMContentLoaded', function () {
+    const cards = document.querySelectorAll('.custom-card');
+  
+    cards.forEach(card => {
+      const textContainer = card.querySelector('.card-text-container');
+      const image = card.querySelector('img');
+  
+      card.addEventListener('mouseenter', function () {
+        const imageHeight = image.offsetHeight;
+        textContainer.style.transform = `translateY(-${imageHeight}px)`;
+      });
+  
+      card.addEventListener('mouseleave', function () {
+        textContainer.style.transform = 'translateY(0)';
+      });
+    });
+  });
+  
 </body>
 
 </html>

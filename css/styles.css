@@ -166,6 +166,43 @@ p.hero-second-message {
   transform: rotateY(180deg);
 }
 
+.plus-sign {
+  margin-left: 5px; /* Adjust the margin as needed */
+}
+
+.custom-card {
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.custom-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+.card-text-container {
+  position: absolute;
+  bottom: -10px;
+  left: 12px;
+  width: 94.5%;
+  padding: 15px;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  background: rgba(0, 0, 0, 0.7);
+  box-sizing: border-box;
+  transition: transform 0.3s ease-in-out;
+}
+
+.custom-card:hover .card-text-container {
+  transform: translateY(-10px);
+  background: var(--bs-primary);
+  color: black;
+}
+
 @media (max-width: 992px) {
   .xl-text {
     font-size: 50px;
