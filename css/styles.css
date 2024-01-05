@@ -119,13 +119,13 @@ p.hero-second-message {
 }
 
 .c-item {
-  height: 80vh;
+  height: 100vh;
 }
 
 .c-img {
   height: 100%;
   object-fit: cover;
-  filter: brightness(0.6);
+  filter: brightness(0.8);
 }
 
 /* Custom styles for animated navigation */
@@ -244,5 +244,9 @@ p.hero-second-message {
   /* Disable navbar link hover effect on mobile devices */
   .navbar-nav .nav-link:hover::after {
     width: 0;
+  }
+
+  .c-item {
+    height: 80vh;
   }
 }
