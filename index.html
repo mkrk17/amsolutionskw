@@ -21,10 +21,31 @@
 </head>
 
 <body>
+  
+
+  <!-- <form method="POST" name="emailContact">
+    <div class="mb-3">
+      <input type="text" class="form-control" placeholder="Enter name" />
+    </div>
+    <div class="mb-3">
+      <input type="email" class="form-control" placeholder="Enter email" />
+    </div>
+    <div class="mb-3">
+      <input type="text" class="form-control" placeholder="Enter phone" />
+    </div>
+    <div class="mb-3">
+      <textarea class="form-control" placeholder="Enter message" rows="8"></textarea>
+    </div>
+    <div class="d-grid gap-2">
+      <input type="submit" value="Send" class="btn btn-primary btn-block" />
+    </div>
+  </form> -->
+
   <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-primary">
     <div class="container py-0">
       <a class="navbar-brand" href="#">
-          <img src="/images/logo/AMSolutionsLogo-07Jan2023.webp" alt="" width="250" />
+          <img src="/images/logo/amsolutionslogo-243x100.jpg" alt="" width="200" />
+          <!-- <img src="/images/logo/AMSolutionsLogo-07Jan2023.webp" alt="" width="250" /> -->
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
         aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -887,18 +908,18 @@
           <div class="text-container">
             <h2>Contact Us For A Quote</h2>
 
-            <form action="mail.php" method="POST">
+            <form method="POST" name="emailContact" action="process_form.php">
               <div class="mb-3">
-                <input type="text" class="form-control" placeholder="Enter name" />
+                <input type="text" class="form-control" name="name" placeholder="Enter name" />
               </div>
               <div class="mb-3">
-                <input type="email" class="form-control" placeholder="Enter email" />
+                <input type="email" class="form-control"name="email" placeholder="Enter email" />
               </div>
               <div class="mb-3">
-                <input type="text" class="form-control" placeholder="Enter phone" />
+                <input type="text" class="form-control" name="phone" placeholder="Enter phone" />
               </div>
               <div class="mb-3">
-                <textarea class="form-control" placeholder="Enter message" rows="8"></textarea>
+                <textarea class="form-control"  name="message" placeholder="Enter message" rows="8"></textarea>
               </div>
               <div class="d-grid gap-2">
                 <input type="submit" value="Send" class="btn btn-primary btn-block" />
