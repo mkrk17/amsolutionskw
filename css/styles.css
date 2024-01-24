@@ -170,6 +170,17 @@ p.hero-second-message {
   height: 80vh; /* Adjust the height as needed, 80% of the viewport height */
 }
 
+.img-container {
+  height: 300px; /* Set the desired fixed height */
+  overflow: hidden; /* Ensure that the images don't overflow the container */
+}
+
+.img-container img {
+  width: 100%; /* Make the images fill the width of the container */
+  height: 100%; /* Ensure the images maintain their aspect ratio within the container */
+  object-fit: cover; /* Cover the entire container while maintaining aspect ratio */
+}
+
 @media (max-width: 992px) {
   .xl-text {
     font-size: 50px;
