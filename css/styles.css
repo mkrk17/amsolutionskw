@@ -171,8 +171,8 @@ p.hero-second-message {
 }
 
 .img-container {
-  height: 300px; /* Set the desired fixed height */
-  overflow: hidden; /* Ensure that the images don't overflow the container */
+  height: 400px; /* Set the desired fixed height */
+  position: relative;
 }
 
 .img-container img {

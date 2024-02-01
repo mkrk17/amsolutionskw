@@ -32,3 +32,22 @@
   font-size: 1em;
   font-weight: normal;
 }
+
+.projects-overlay {
+  position: absolute;
+  bottom: -16%; /* Adjust as needed */
+  left: 15%;
+  width: 70%;
+  background-color: white;
+  text-align: center;
+  padding: 50px 0; /* Adjust padding as needed */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.arrow-red1 {
+  margin-right: 10px;
+}
+
+.read-more {
+  color: black;
+}
