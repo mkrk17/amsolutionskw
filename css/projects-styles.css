@@ -44,6 +44,17 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
 }
 
+.projects-overlay1 {
+  position: absolute;
+  bottom: -30%; /* Adjust as needed */
+  left: 15%;
+  width: 70%;
+  background-color: white;
+  text-align: center;
+  padding: 20px; /* Adjust padding as needed */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
 .arrow-red1 {
   margin-right: 10px;
 }
